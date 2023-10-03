@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+   
+}
+section{
+    background-size: cover;
+    -webkit-background-size:cover;
+    margin-top:80px;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color:rgb(219, 235, 235);
+    background:url(./bkg.jpg);
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.left{
+    width: 70%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background:url(./hanginglight1.jpg) no-repeat center/cover;
+    border-radius: 8px;
+}
+.right{
+    width: 50%;
+    min-height: 300px;
+    background-color: #2f3d3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    margin-left: -100px;
+}
+.right h2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.right p{
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+.right a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+@media only screen and (max-width:768px) {
+    section{
+        margin-top:30px;
+    }
+    .container{
+        
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 20px;
+
+    }
+    .left{
+        width: 100%;
+        height: 400px;
+    }
+    .right{
+        width: 90%;
+        margin: 0;
+        margin-top: -100px;
+    }
+   
+}
